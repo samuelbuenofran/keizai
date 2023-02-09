@@ -1,1 +1,1 @@
-# Keizai - Economics and Geopolitical Analysis Tool
+# Keizai - Economics and Geopolitical Stability Analysis Tool
