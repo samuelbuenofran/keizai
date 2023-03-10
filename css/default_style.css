@@ -9,7 +9,7 @@ body {
     font-family: sans-serif;
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: 80px auto 150px 50px;
+    grid-template-rows: calc(40px - 40px) auto 150px 50px;
     grid-template-areas: 
     "empty_space topnav empty_space"
     "empty_space middle_image empty_space"
@@ -24,15 +24,15 @@ body {
     cursor: pointer;
     outline: none;
     color: #ffffff;
-    background: rgb(2,0,36);
-    background: linear-gradient(360deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
-    /* background-color: #333333; */
-    border: none;
-    /* border-radius: 15px; */
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
+    /* background: rgb(2,0,36); */
+    background: linear-gradient(360deg, #020024 0%, #090979 35%, #008cff 50%, #00d5ff 100%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: #3e8e41;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     box-shadow: 5px 5px #000000;
     text-decoration: none;
   }
