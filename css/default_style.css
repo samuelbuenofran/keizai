@@ -9,7 +9,7 @@ body {
     font-family: sans-serif;
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: calc(40px - 40px) auto 150px 50px;
+    grid-template-rows: 80px auto 150px 50px;
     grid-template-areas: 
     "empty_space topnav empty_space"
     "empty_space middle_image empty_space"
@@ -19,7 +19,7 @@ body {
 
 .topnav_btn {
     padding: 15px 25px;
-    font-size: 24px;
+    font-size: calc(12px + 12px) !important;
     text-align: center;
     cursor: pointer;
     outline: none;
