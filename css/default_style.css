@@ -33,19 +33,19 @@ body {
 
 .topnav_btn {
     padding: 15px 25px;
-    font-size: 24px;
+    font-size: calc(12px + 12px) !important;
     text-align: center;
     cursor: pointer;
     color: #ffffff;
-    background: rgb(2,0,36);
-    background: linear-gradient(360deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
-    /* background-color: #333333; */
-    border: none;
-    /* border-radius: 15px; */
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
+    /* background: rgb(2,0,36); */
+    background: linear-gradient(360deg, #020024 0%, #090979 35%, #008cff 50%, #00d5ff 100%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: #3e8e41;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     box-shadow: 5px 5px #000000;
     text-decoration: none;
   }
