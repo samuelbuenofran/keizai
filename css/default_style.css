@@ -5,24 +5,37 @@ html, body {
 }
 
 body {
+    background-image: url("../img/pexels-lil-artsy-1249525.jpg");
     background-color: beige;
     font-family: sans-serif;
     display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: 80px auto 150px 50px;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 80px auto 80px;
     grid-template-areas: 
     "empty_space topnav empty_space"
     "empty_space middle_image empty_space"
     "empty_space empty_space empty_space"
     "footer footer footer"
+    
 }
+
+/* Using IDs to differentiate between buttons and their positions */
+
+#home_topnav_btn {
+    border-bottom-left-radius: 45px;
+    border-top-left-radius: 45px;
+}
+
+#about_us_topnav_btn {
+    border-bottom-right-radius: 45px;
+    border-top-right-radius: 45px;
+}   
 
 .topnav_btn {
     padding: 15px 25px;
     font-size: 24px;
     text-align: center;
     cursor: pointer;
-    outline: none;
     color: #ffffff;
     background: rgb(2,0,36);
     background: linear-gradient(360deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
@@ -38,6 +51,9 @@ body {
   }
 
 .topnav_btn:hover {
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: #000000;
     background: rgb(21,21,202);
     background: linear-gradient(360deg, rgba(21,21,202,1) 0%, rgba(138,235,255,1) 100%);
     /* background-color: #8d8d8d */
@@ -45,16 +61,17 @@ body {
 
 .topnav_btn:active {
     text-decoration: none;
-  background-color: #3e8e41;
-  box-shadow: 5px 5px #000000;
-  transform: translateY(2px);
-  transform: translateX(2px);
+    /* background-color: #3e8e41; */
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,121,106,1) 50%, rgba(0,212,255,1) 100%);
+    /* box-shadow: 5px 5px #000000;
+    transform: translateY(2px);
+    transform: translateX(2px); */
 }
 
 .topnav {
-    width: 100%;
-    height: 100%;
-    position: fixed;
+    width: auto;
+    height: auto;
     border-top-left-radius: 15%;
     border-top-right-radius: 15%;
     border-bottom-left-radius: 15%;
@@ -64,7 +81,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
+    
     grid-area: topnav
 }
 
