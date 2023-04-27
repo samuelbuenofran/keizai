@@ -5,7 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing page - Keizai Technologies</title>
-    <link rel="stylesheet" href="src/css/default_style.css" />
+
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./src/landing_page/css/default_style.css"
+      media="screen"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./src/landing_page/css/landing_page_style.css"
+      media="screen"
+    />
 
     <!-- Bootstrap CSS -->
     <link
@@ -19,10 +34,14 @@
     <main>
       <header>
         <nav class="topnav" id="main_topnav">
-          <a class="topnav_btn" id="home_topnav_btn" href="">Home</a>
-          <a class="topnav_btn" id="news_topnav_btn" href="">News</a>
-          <a class="topnav_btn" id="contact_topnav_btn" href="">Contact</a>
-          <a class="topnav_btn" id="about_us_topnav_btn" href="">About us</a>
+          <a class="topnav_btn" id="home_topnav_btn" href="./home.html">Home</a>
+          <a class="topnav_btn" id="news_topnav_btn" href="./news.html">News</a>
+          <a class="topnav_btn" id="contact_topnav_btn" href="./contact.html"
+            >Contact</a
+          >
+          <a class="topnav_btn" id="about_us_topnav_btn" href="./about_us.html"
+            >About us</a
+          >
         </nav>
       </header>
 
@@ -35,11 +54,25 @@
       </span>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="index_footer">
       <p>
         Keizai© - Social, Economic, and Geopolitical Stability Analysis Tool -
         SEGSAT™
       </p>
+      <ul>
+        <li>
+          <a href="./home.html">Home</a>
+        </li>
+        <li>
+          <a href="./news.html">News</a>
+        </li>
+        <li>
+          <a href="./contact.html">Contact</a>
+        </li>
+        <li>
+          <a href="./about_us.html">About us</a>
+        </li>
+      </ul>
     </footer>
     <!-- Bootstrap JS -->
     <script
