@@ -18,7 +18,7 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="./src/landing_page/css/landing_page_style.css"
+      href="./css/landing_page_style.css"
       media="screen"
     />
 
@@ -47,14 +47,15 @@
         <!-- This code sets the hidden login tab that can be accessed by hovering the cursor over it. -->
         <div class="dropdown">
           <button
-            class="dropbtn"
+            class="drop_btn"
             id="login_dropbtn"
-            onmouseover="showLoginTab()"
+            onmouseover="showLoginTab = () => {
+              document.getElementById('login_dropbtn').style.display = 'block'; }"
             onmouseout="hideLoginTab()"
           >
             Login
           </button>
-          <div class="dropdown-content" id="login_dropdown_content">
+          <div class="dropdown_content" id="login_dropdown_content">
             <form action="./src/landing_page/php/login.php" method="POST">
               <label for="username">Username:</label>
               <input
