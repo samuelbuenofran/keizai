@@ -1,0 +1,32 @@
+{
+  "name": "keizai_tech",
+  "version": "0.0.0",
+  "description": "The Keizai Technologies website, including the SEGSAT dashboard.",
+  "main": "./js/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samuelbuenofran/keizai.git"
+  },
+  "keywords": [
+    "keizai",
+    "segsat",
+    "analysis",
+    "socioeconomics",
+    "hdi",
+    "gdp",
+    "gini"
+  ],
+  "author": "Samuel Bueno Francisco",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/samuelbuenofran/keizai/issues"
+  },
+  "homepage": "https://github.com/samuelbuenofran/keizai#readme",
+  "dependencies": {
+    "chalk": "^5.2.0"
+  }
+}

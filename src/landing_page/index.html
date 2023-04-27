@@ -43,6 +43,39 @@
             >About us</a
           >
         </nav>
+
+        <!-- This code sets the hidden login tab that can be accessed by hovering the cursor over it. -->
+        <div class="dropdown">
+          <button
+            class="dropbtn"
+            id="login_dropbtn"
+            onmouseover="showLoginTab()"
+            onmouseout="hideLoginTab()"
+          >
+            Login
+          </button>
+          <div class="dropdown-content" id="login_dropdown_content">
+            <form action="./src/landing_page/php/login.php" method="POST">
+              <label for="username">Username:</label>
+              <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Enter your username"
+                required
+              />
+              <label for="password">Password:</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter your password"
+                required
+              />
+              <input type="submit" value="Login" />
+            </form>
+          </div>
+        
       </header>
 
       <span id="welcome_msg">
